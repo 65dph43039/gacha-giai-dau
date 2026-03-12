@@ -1,0 +1,123 @@
+:root {
+  --width: 900px;
+  --screen-height: 800px;
+}
+.gacha-app {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgba(34,34,34,0.97);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px #0008;
+  padding: 36px 12px 24px 12px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 60px;
+}
+.header button {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 1.15rem;
+  margin: 0 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  padding: 8px 24px;
+}
+.header button.active, .header button:hover {
+  opacity: 1;
+  font-weight: bold;
+  border-bottom: 2px solid #e6cb94;
+}
+.divider {
+  width: 0.08rem;
+  background-color: #fff;
+  opacity: 0.75;
+  height: 50%;
+  margin: auto 0.2rem;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0 18px 0;
+}
+.roll-btn {
+  font-size: 1.2rem;
+  background: linear-gradient(90deg, #a7785e, #cda46e);
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 14px 36px;
+  cursor: pointer;
+  box-shadow: 0 4px 18px #bd693290;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.roll-btn:hover {
+  background: linear-gradient(90deg, #cda46e, #a7785e);
+  box-shadow: 0 8px 36px #bd6932cc;
+}
+.animation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 18px auto;
+}
+.animation video {
+  width: 320px;
+  height: 180px;
+  border-radius: 16px;
+  box-shadow: 0 4px 28px #000a;
+}
+.result-card {
+  width: 100%;
+  margin: 32px auto;
+  padding: 1.5%;
+}
+.wrapper {
+  width: 100%;
+  aspect-ratio: 368/88;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.star5 .wrapper {
+  background-image: linear-gradient(to right, #a7785e, #cda46e);
+  border-radius: 13px;
+  box-shadow: 0 2px 12px #a7785e66;
+}
+.caption {
+  width: 65%;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.74) 60%, transparent);
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  display: block;
+  text-align: left;
+  padding: 1.5% 5%;
+  position: absolute;
+  font-size: calc(0.018 * var(--width));
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.content {
+  padding: 0 5%;
+  font-size: 1.02em;
+  line-height: 162%;
+  color: #e7e8ea;
+}
+@media screen and (max-width: 550px) {
+  .gacha-app {
+    max-width: 97vw;
+    padding: 18px 2px;
+  }
+  .animation video {
+    width: 180px; height: 100px;
+  }
+  .header { height: 40px; }
+}

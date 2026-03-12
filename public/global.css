@@ -1,0 +1,207 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: #333;
+	margin: 0;
+	padding: 8px;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+button {
+	color: #333;
+	background-color: #f4f4f4;
+	outline: none;
+}
+
+button:disabled {
+	color: #999;
+}
+
+button:not(:disabled):active {
+	background-color: #ddd;
+}
+
+button:focus {
+	border-color: #666;
+}
+:root {
+  --width: 900px;
+  --screen-height: 800px;
+}
+.gacha-app {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 60px;
+}
+.header button {
+  background: #1f2937;
+  border: 2px solid #3b82f6;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.header button:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+.header button.active {
+  background: #3b82f6;
+  box-shadow: 0 0 15px #3b82f6;
+}
+.divider {
+  width: 0.08rem;
+  background-color: #fff;
+  opacity: 0.75;
+  height: 50%;
+  margin: auto 0.2rem;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0 18px 0;
+}
+.roll-btn {
+  padding: 12px 40px;
+  font-size: 20px;
+  background: linear-gradient(90deg, gold, orange);
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.roll-btn:hover {
+  transform: scale(1.1);
+}
+.animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.animation video {
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+}
+.result-card {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 20px;
+  border: 2px solid gold;
+  box-shadow: 0 0 20px gold;
+  text-align: center;
+}
+
+.result-card .caption {
+  font-size: 28px;
+  font-weight: bold;
+  color: gold;
+}
+
+.result-card .content {
+  margin-top: 40px;
+  font-size: 30px;
+}
+.wrapper {
+  width: 100%;
+  aspect-ratio: 368/70;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.star5 .wrapper {
+  background-image: linear-gradient(to right, #a7785e, #cda46e);
+  border-radius: 13px;
+  box-shadow: 0 2px 12px #a7785e66;
+}
+.caption {
+  width: 65%;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.74) 60%, transparent);
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  display: block;
+  text-align: left;
+  padding: 1.5% 5%;
+  position: absolute;
+  font-size: calc(0.018 * var(--width));
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.content {
+  padding: 0 5%;
+  font-size: 1.02em;
+  line-height: 162%;
+  color: #e7e8ea;
+}
+.big-number {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 0 0 20px gold;
+}
+.big-number.good {
+  color: #22c55e;
+  text-shadow: 0 0 20px #22c55e;
+}
+
+.big-number.bad {
+  color: #ef4444;
+  text-shadow: 0 0 20px #ef4444;
+}
